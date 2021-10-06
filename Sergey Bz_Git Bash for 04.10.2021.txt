@@ -1,0 +1,140 @@
+Первое ДЗ 
+до 04.10.2021
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я - pwd
+
+
+2) Создать папку - mkdir bash_documents
+
+
+3) Зайти в папку - cd ./bash_documents
+
+
+4) Создать 3 папки - mkdir {bash_documents1,bash_documents2,bash_documents3}
+
+
+5) Зайти в любоую папку - cd ./documents1
+
+
+6) Создать 5 файлов (3 txt, 2 json) - touch {1.txt,2.txt,3.txt,1.json,2.json}
+
+
+7) Создать 3 папки - mkdir {documents1,documents2,documents3}
+
+
+8. Вывести список содержимого папки ls -la
+
+
+9) + Открыть любой txt файл - vim 2.txt
+
+
+10) + написать туда что-нибудь, любой текст. - 
+{
+1) test
+2) test 4324
+3) operators
+4)
+5)
+}
+
+
+11) + сохранить и выйти. - esc, shift + :, wq, enter
+
+
+12) Выйти из папки на уровень выше - cd ../
+
+—————————————————————————————————————————————————————
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. - mv ./{1.txt,1.json} ./documents1/
+
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. - cp ./documents1/{1.txt,1.json} ./documents2
+
+
+15) Найти файл по имени - find -name "2.json"
+
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. - $ cat ./documents1/1.txt
+{
+1) password: sdjaojd
+2) login: ijdosiajo
+3) test
+4) idjaidoajsd
+}
+
+
+17) вывести несколько первых строк из текстового файла - $ cat ./documents1/1.txt | sed -n 2,5p
+{
+2) login: ijdosiajo
+3) test
+4) idjaidoajsd
+5)dsadada
+}
+
+
+18) вывести несколько последних строк из текстового файла - $ tail -n3 ./documents1/1.txt
+{
+5)dsadada
+6)dsada
+7)sdadas
+}
+
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. - less ./documents1/2.txt
+
+
+20) вывести дату и время - date
+
+===============================================================
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request - curl http://162.55.220.72:5005/terminal-hw-request
+
+
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13 -
+
+nano ./myscript.sh
+}
+#!/bin/bash
+
+echo "Задание 3"
+cd ./bash_documents
+echo "Задание 4"
+mkdir {bash_documents00,bash_documents01,bash_documents02}
+echo "Задание 5"
+cd ./documents3
+echo "Задание 6"
+touch {00.txt,01.txt,02.txt,00.json,01.json}
+echo "Задание 7"
+mkdir {documents00,documents01,documents02}
+echo "Задание 8"
+ls -la
+echo "Задание 13"
+mv ./{00.txt,00.json} ./documents00/
+{
+
+./myscript.sh
+
+{
+    Задание 3
+    Задание 4
+    Задание 5
+    Задание 6
+    Задание 7
+    Задание 8
+    total 8
+    drwxr-xr-x 1 Seriy 197121 0 Oct  3 19:45 .
+    drwxr-xr-x 1 Seriy 197121 0 Oct  3 19:45 ..
+    -rw-r--r-- 1 Seriy 197121 0 Oct  3 19:45 00.json
+    -rw-r--r-- 1 Seriy 197121 0 Oct  3 19:45 00.txt
+    -rw-r--r-- 1 Seriy 197121 0 Oct  3 19:45 01.json
+    -rw-r--r-- 1 Seriy 197121 0 Oct  3 19:45 01.txt
+    -rw-r--r-- 1 Seriy 197121 0 Oct  3 19:45 02.txt
+    drwxr-xr-x 1 Seriy 197121 0 Oct  3 19:45 documents00
+    drwxr-xr-x 1 Seriy 197121 0 Oct  3 19:45 documents01
+    drwxr-xr-x 1 Seriy 197121 0 Oct  3 19:45 documents02
+    Задание 13
+}
