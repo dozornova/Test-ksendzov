@@ -1,6 +1,7 @@
 <info>
-  <name>Leonardo di ser Piero da Vinci</name>
-  <age>501</age>
-  <pets>cat</pets>
-  <dream_salary>1</dream_salary>
+  <favorite_film>Tenet</favorite_film>
+  <favorite_tv_series>House M.D.</favorite_tv_series>
+  <favorite_food>sushi rolls</favorite_food>
+  <favorite_season>spring</favorite_season>
+  <future_country_to_visit>Japan</future_country_to_visit>
 </info>
