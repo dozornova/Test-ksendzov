@@ -1,0 +1,24 @@
+Основная информация
+- Короткое описание (Summary)
+- Проект (Project)
+- Компонент приложения (Component)
+- Номер версии (Version)
+- Серьезность (Severity)	
+- Приоритет (Priority)	
+- Статус (Status)	
+- Автор (Author)	
+- Назначен на (Assigned To)
+
+Environment
+- ОС 
+- Service pack
+- Browser + Build
+- / ...
+
+Описание
+- Шаги воспроизведения (Steps to Reproduce)
+- Фактический Результат (Result)
+- Ожидаемый результат (Expected Result)
+
+Дополнения
+- Прикрепленный файл (Attachment)
