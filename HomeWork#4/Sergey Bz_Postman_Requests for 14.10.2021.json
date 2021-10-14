@@ -71,32 +71,9 @@
 		},
 		{
 			"name": "EP_3",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "Sergey",
-							"type": "text"
-						},
-						{
-							"key": "age",
-							"value": "25",
-							"type": "text"
-						},
-						{
-							"key": "salary",
-							"value": "100",
-							"type": "text"
-						}
-					]
-				},
 				"url": {
 					"raw": "{{url}}/object_info_1?name=Sergey&age=25&weight=75",
 					"host": [
@@ -125,32 +102,9 @@
 		},
 		{
 			"name": "EP_4",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "Sergey",
-							"type": "text"
-						},
-						{
-							"key": "age",
-							"value": "25",
-							"type": "text"
-						},
-						{
-							"key": "salary",
-							"value": "100",
-							"type": "text"
-						}
-					]
-				},
 				"url": {
 					"raw": "{{url}}/object_info_2?name=Sergey&age=25&salary=100",
 					"host": [
@@ -179,32 +133,9 @@
 		},
 		{
 			"name": "EP_5",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "Sergey",
-							"type": "text"
-						},
-						{
-							"key": "age",
-							"value": "25",
-							"type": "text"
-						},
-						{
-							"key": "salary",
-							"value": "100",
-							"type": "text"
-						}
-					]
-				},
 				"url": {
 					"raw": "{{url}}/object_info_3?name=Sergey&age=25&salary=100",
 					"host": [
@@ -233,32 +164,9 @@
 		},
 		{
 			"name": "EP_6",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "Sergey",
-							"type": "text"
-						},
-						{
-							"key": "age",
-							"value": "25",
-							"type": "text"
-						},
-						{
-							"key": "salary",
-							"value": "100",
-							"type": "text"
-						}
-					]
-				},
 				"url": {
 					"raw": "{{url}}/object_info_4?name=Sergey&age=25&salary=100",
 					"host": [
@@ -317,23 +225,6 @@
 					],
 					"path": [
 						"user_info_2"
-					],
-					"query": [
-						{
-							"key": "name",
-							"value": "Sergey",
-							"disabled": true
-						},
-						{
-							"key": "age",
-							"value": "25",
-							"disabled": true
-						},
-						{
-							"key": "salary",
-							"value": "100",
-							"disabled": true
-						}
 					]
 				}
 			},
