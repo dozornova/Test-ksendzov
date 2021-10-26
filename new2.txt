@@ -1,6 +1,0 @@
-{
-name: 'Leonardo di ser Piero da Vinci'
-age: 501
-pets: 'cat'
-dream salary; '1 $'
-}
