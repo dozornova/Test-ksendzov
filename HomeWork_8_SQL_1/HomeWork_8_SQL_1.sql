@@ -5,6 +5,10 @@ select * from students
  2. Вывести всех студентов в таблице
 
 select students from students
+
+или
+
+select name from students
 -------------------------
  3. Вывести только Id пользователей
 
@@ -39,7 +43,7 @@ where created_on = '2021-03-26 00:00:00'
  10. Вывести пользователей где в имени есть слово Анна
 
 select * from students
-where name like('Анна')
+where name like('%Анна%')
 -------------------------
  11. Вывести пользователей где в имени в конце есть 8
 
@@ -48,8 +52,15 @@ where name like('%8')
 -------------------------
  12. Вывести пользователей где в имени в есть буква а
 
+Вариант с русской буквой 'а'
+
 select * from students
 where name like('%а%')
+
+Вариант с английской буквой 'a'
+
+select * from students
+where name like('%a%')
 -------------------------
  13. Вывести пользователей которые были созданы 2021-07-12 00:00:00
 
@@ -115,7 +126,12 @@ where id > '80' and id < '90'
  25. Вывести пользователя у которых id между 80 и 90
 
 select * from students
-where id > '80' and id < '90'
+where id between '80' and '90'
+
+или
+
+select * from students
+where id > '79' and id < '91'
 -------------------------
  26. Вывести пользователей где password равен 12333, 1m313, 123313
 
