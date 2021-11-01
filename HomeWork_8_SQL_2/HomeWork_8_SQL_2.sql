@@ -90,7 +90,7 @@ role_name integer not null unique
 
 alter table roles 
 alter column role_name type varchar(30)
-using role_name::integer;
+using role_name::varchar;
 
 insert into roles (id, role_name)
 values (default, 'Senior Automation QA engineer');
