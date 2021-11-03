@@ -1,14 +1,14 @@
  1. Вывести всех работников чьи зарплаты есть в базе, вместе с зарплатами.
 ---
-select employee_name from employees e
-join salary s 
-on e.id = s.id
+select e.employee_name, s.monthly_salary from employees e
+join employee_salary es on e.id = es.employee_id 
+join salary s on es.salary_id = s.id
 ---
  2. Вывести всех работников у которых ЗП меньше 2000.
 ---
-select employee_name from employees e
-join salary s 
-on e.id = s.id
+select e.employee_name, s.monthly_salary from employees e
+join employee_salary es on e.id = es.employee_id 
+join salary s on es.salary_id = s.id
 where s.monthly_salary < 2000
 ---
  3. Вывести все зарплатные позиции, но работник по ним не назначен. (ЗП есть, но не понятно кто её получает.)
