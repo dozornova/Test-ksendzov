@@ -143,7 +143,7 @@ join roles_employee re on e.id = re.employee_id
 join roles r on r.id = re.role_id
 join employee_salary es on e.id = es.employee_id 
 join salary s on es.salary_id = s.id
-where r.role_name like ('%Senior Java%')
+where r.role_name like ('%Senior Java developer%')
 ---
  20. Вывести зарплаты Junior QA инженеров
 ---
